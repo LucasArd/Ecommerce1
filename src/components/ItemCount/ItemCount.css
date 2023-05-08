@@ -1,0 +1,17 @@
+.Counter{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem;
+    border-radius: 1rem;
+}
+
+.Controls{
+    display: flex;
+    gap: 2rem;
+    padding: 1rem;
+    border-radius: 1rem;
+}
+.AgregarACarrito{
+    padding: 0.5rem;
+}

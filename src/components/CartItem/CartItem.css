@@ -1,0 +1,31 @@
+.CardContainers {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    width: 80%;
+}
+
+.CardCont{
+    margin-bottom: 1rem;
+    display: flex;
+    flex-direction: row;
+    max-height: 8rem;
+}
+
+.card-imgg{
+    object-fit: contain;
+    width:60%;
+    height:100%;
+}
+
+.CardBody{
+    display: flex;
+    flex-direction: row;
+}
+
+.CardCenter{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+}

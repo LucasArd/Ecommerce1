@@ -1,0 +1,8 @@
+.ItemListContainer{
+    width:95%;
+    display: flex;
+    justify-content: center;
+    margin-left: 2.5%;
+    padding-top: 2rem;
+
+}

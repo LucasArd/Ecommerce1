@@ -1,0 +1,27 @@
+.ItemDetailContainer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.CartViewContainer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 1rem;
+
+}
+
+.DivNoProducts{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 3rem;
+    gap: 2rem;
+}
+.Option{
+    text-decoration: none;
+    color: black;
+}
