@@ -15,6 +15,7 @@ const ItemDetail = (props) => {
     const { addItem } = useContext(CartContext)
 
     const handleOnAdd = (quantity) => {
+
         setQuantityAdded(quantity)
         alert("Agregado al carrito")
 
