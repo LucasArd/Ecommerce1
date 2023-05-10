@@ -1,5 +1,6 @@
 import React from "react";
 import OptionNavBarComponent from "../OptionNavBarComponent/OptionNavBarComponent.jsx";
+import './ListOptionNavBarComponent.css';
 
 const ListOptionNavBarComponent = (props) => {
     const { nameOption } = props;

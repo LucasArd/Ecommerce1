@@ -11,8 +11,6 @@ const URL = "https://fakestoreapi.com/products/"
 
 const ItemListContainer = ({greeting}) =>{   
     
-
-
     const {category} = useParams(); 
     const final_url = category ? `${URL}/${URL_CATEGORY}/${category}`: URL;
     const [data] = useFetch(final_url)

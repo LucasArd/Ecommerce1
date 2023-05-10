@@ -3,10 +3,31 @@
     justify-content: space-around;
     align-items: center;
     background-color: rgba(30, 26, 26, 0.527);
-    height: 4rem;
+    height: 5rem;
 }
 
 .NavBarDiv {
     display: flex;
     gap: 1rem;
+}
+
+.NavBarTitle{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+}
+
+.NavBarTitleH3{
+    padding: 1rem;
+    color: black;
+}
+.NavBarImg{
+    border: 2px solid black;
+    border-radius: 1rem;
+    display: flex;
+    flex-direction: row;
+    width: 4rem;
+    height: 4rem;
+    object-fit: contain;
 }
