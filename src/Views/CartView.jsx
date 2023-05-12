@@ -21,7 +21,7 @@ const CartView = () => {
             </div>
         )
     }
-
+    
     return (
         <Fragment>
             <div className="CartViewContainer">
