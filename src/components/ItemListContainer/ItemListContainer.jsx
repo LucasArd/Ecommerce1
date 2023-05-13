@@ -9,7 +9,7 @@ import useFirestore from "../../utils/useFireStore";
 // const URL = "https://fakestoreapi.com/products/"
 
 const nameCollection = "items";
-const documentId = "2iDHGQv5fy9HfzA8wi2U"
+// const documentId = "2iDHGQv5fy9HfzA8wi2U"
 
 const ItemListContainer = ({greeting}) =>{   
     
