@@ -35,7 +35,6 @@ const useFirestore = ({ nameCollection, documentId }) => {
                     item['id'] = doc.id; // item en la posicion ID es el ID del documento (id de firebase)
                     return item; // Todo esto lo hacemos para no modificar todo el flujo de codigo 
                 }); 
-                console.log(data);
                 setState({ ...state, data: data, loading: false }); // en el estado, guardamos el valor de la data y le decimos que ya no esta cargando la info (loading:false)
             })
         }

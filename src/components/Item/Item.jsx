@@ -7,7 +7,7 @@ import { NavLink } from 'react-router-dom';
 
 const Item = (props) => {
 
-    const { id: idProduct, title, image, price } = props
+    const { id: idProduct, title, image, price, category } = props
 
     return (
         <Card className='CardContainer overflow-hidden'>
