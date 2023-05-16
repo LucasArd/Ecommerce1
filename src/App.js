@@ -6,6 +6,7 @@ import ProductsView from './Views/ProductsView'
 import DetailProductView from './Views/DetailProductView';
 import CartView from './Views/CartView';
 import { CartProvider } from './context/CartContext';
+import Footer from './components/Footer/Footer';
 
 function App() {
   return (
@@ -18,8 +19,9 @@ function App() {
             <Route path='/products/detail/:idProduct' element={<DetailProductView/>}/>
             <Route path='/category/:category' element={<ProductsView/>}/>
             <Route path='/cart' element={<CartView/>}/>
-            {/* <Route path='*' element={<h1>Error 404 Not Found</h1>}/> */}
+             <Route path='*' element={<h1>Error 404 Not Found</h1>}/>
           </Routes>
+          <Footer/>
         </CartProvider>
       </BrowserRouter>
     </Fragment>
