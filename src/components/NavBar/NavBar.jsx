@@ -18,7 +18,6 @@ const NavBar = () => {
         return "category" in categoriesObject ? categoriesObject.category :[];
     }, [data])
     
-    console.log(dataProcess);
     return (
         <nav className="NavBar">
             <NavLink to="http://localhost:3000"className="NavBarTitle">

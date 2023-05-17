@@ -1,0 +1,20 @@
+.Carousel-Container{
+    max-height: 20rem;
+    padding: 1rem;
+}
+.Carousel-ItemContainer{
+    width: 70%;
+    margin-left: 18%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.Carousel-Item{
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+.carousel-inner{
+    max-width: 70%;
+    display: flex;
+    align-items: center;
+}

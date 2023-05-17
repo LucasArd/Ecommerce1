@@ -1,14 +1,27 @@
 import React from 'react';
 import Carousel from 'react-bootstrap/Carousel';
 import './Carousel.css';
+import useFirestore from '../../utils/useFireStore';
 
+const nameCollection = "items";
 const CarouselIndex = () => {
+
+  const [data] = useFirestore({nameCollection});
+  
+  const DataImgsFilter = (prop) =>{
+    const dataImgs = data.length !== 0 ? data[prop] : [];
+    console.log(dataImgs.image);
+    return "image" in dataImgs ? dataImgs.image : [];
+  }
+  
+  console.log(data);
   return (
-    <Carousel fade>
-      <Carousel.Item>
-        <img
-          className="d-block w-100"
-          src="holder.js/800x400?text=First slide&bg=373940"
+    <Carousel fade className="Carousel-ItemContainer" variant="dark">
+      <Carousel.Item className="Carousel-Item" >
+        <img 
+          
+          className="d-block w-100 Carousel-Container"
+          src={DataImgsFilter(0)}
           alt="First slide"
         />
         <Carousel.Caption>
@@ -16,10 +29,11 @@ const CarouselIndex = () => {
           <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
         </Carousel.Caption>
       </Carousel.Item>
-      <Carousel.Item>
+
+      <Carousel.Item className="Carousel-Item" >
         <img
-          className="d-block w-100"
-          src="holder.js/800x400?text=Second slide&bg=282c34"
+          className="d-block w-100 Carousel-Container"
+          src={DataImgsFilter(1)}
           alt="Second slide"
         />
 
@@ -28,10 +42,11 @@ const CarouselIndex = () => {
           <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
         </Carousel.Caption>
       </Carousel.Item>
-      <Carousel.Item>
+
+      <Carousel.Item className="Carousel-Item" >
         <img
-          className="d-block w-100"
-          src="holder.js/800x400?text=Third slide&bg=20232a"
+          className="d-block w-100 Carousel-Container"
+          src={DataImgsFilter(0)}
           alt="Third slide"
         />
 
