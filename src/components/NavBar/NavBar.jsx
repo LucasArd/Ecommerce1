@@ -7,7 +7,7 @@ import { useMemo } from "react";
 import useFireStore from "../../utils/useFireStore";
 
 const nameCollection = "categories";
-const imgUrl = "https://img.freepik.com/vector-gratis/carro-tienda-edificio-tienda-dibujos-animados_138676-2085.jpg?w=2000"
+const imgUrl = "https://i.pinimg.com/originals/0c/38/ff/0c38ffe0639ecb871a4c240c503e3ac0.jpg"
 
 const NavBar = () => {
 
@@ -22,7 +22,7 @@ const NavBar = () => {
         <nav className="NavBar">
             <NavLink to="http://localhost:3000"className="NavBarTitle">
                 <img src={imgUrl} alt="tiendaimagen" className="NavBarImg" />
-                <h3 className = "NavBarTitleH3">Free Shop</h3>
+                <h3 className = "NavBarTitleH3">S.T Gallery</h3>
             </NavLink>
             <ListOptionNavBarComponent nameOption={dataProcess} />
             <CartWidget />

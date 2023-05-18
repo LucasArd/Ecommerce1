@@ -41,7 +41,7 @@ const ItemDetail = (props) => {
                 </Card.Text>
                     {
                         quantityAdded > 0 ? (
-                            <Link to='/' className='Option'><Button variant="primary">Terminar Compra</Button></Link>
+                            <Link to='/' className='Option'><Button variant="primary">Back to Gallery</Button></Link>
                         ) : (
                             <ItemCount initial={1} stock={10} onAdd={handleOnAdd} />
                         )

@@ -21,7 +21,7 @@ const CarouselIndex = () => {
         <img 
           
           className="d-block w-100 Carousel-Container"
-          src={DataImgsFilter(0)}
+          src={DataImgsFilter(13)}
           alt="First slide"
         />
         <Carousel.Caption>
@@ -33,7 +33,7 @@ const CarouselIndex = () => {
       <Carousel.Item className="Carousel-Item" >
         <img
           className="d-block w-100 Carousel-Container"
-          src={DataImgsFilter(1)}
+          src={DataImgsFilter(12)}
           alt="Second slide"
         />
 
@@ -46,7 +46,7 @@ const CarouselIndex = () => {
       <Carousel.Item className="Carousel-Item" >
         <img
           className="d-block w-100 Carousel-Container"
-          src={DataImgsFilter(0)}
+          src={DataImgsFilter(11)}
           alt="Third slide"
         />
 

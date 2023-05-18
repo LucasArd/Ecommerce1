@@ -4,12 +4,19 @@
     align-items: center;
     background-color: rgba(30, 26, 26, 0.527);
     height: 5rem;
+
+    background: #FF0099;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to bottom, #493240, #FF0099);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to top, #493240, #FF0099); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    
 }
 
 .NavBarDiv {
     display: flex;
     gap: 1rem;
 }
+
+
 
 .NavBarTitle{
     display: flex;

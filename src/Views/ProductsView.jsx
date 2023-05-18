@@ -8,7 +8,7 @@ const ProductsView = (props) =>{
     return (
         <Fragment>
             <CarouselIndex/>
-            <ItemListContainer greeting={'Bienvenidos'}/>
+            <ItemListContainer greeting={'Welcome to S.T Gallery Experience'}/>
         </Fragment>
     )
 }

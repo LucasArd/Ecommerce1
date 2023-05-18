@@ -1,10 +1,10 @@
 .Carousel-Container{
-    max-height: 20rem;
+    max-height: 30rem;
     padding: 1rem;
 }
 .Carousel-ItemContainer{
     width: 70%;
-    margin-left: 18%;
+    margin-left: 15%;
     display: flex;
     justify-content: center;
     align-items: center;

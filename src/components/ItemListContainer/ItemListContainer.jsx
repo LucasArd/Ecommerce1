@@ -20,7 +20,7 @@ const ItemListContainer = ({greeting}) =>{
    
     return(
         <Fragment>
-            <h3>{greeting}</h3>
+            <h3 className="greeting-h3">{greeting}</h3>
             <div className="ItemListContainer">
                 <ItemList products={data}/>
             </div>
