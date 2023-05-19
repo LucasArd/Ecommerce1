@@ -10,7 +10,7 @@ const Item = (props) => {
     const { id: idProduct, title, image, price } = props
 
     return (
-        <Card className='CardContainer overflow-hidden'>
+        <Card className='CardContainer overflow-hidden' >
             <Card.Img variant="top" src={image} />
             <Card.Body>
                 <Card.Title>{title}</Card.Title>
@@ -20,7 +20,7 @@ const Item = (props) => {
                     {price}
                 </Card.Text>
                 <NavLink to={`/products/detail/${idProduct}`}>
-                    <Button variant="primary">Ver Detalle</Button>
+                    <Button variant="warning">Ver Detalle</Button>
                 </NavLink>
             </Card.Body>
         </Card>

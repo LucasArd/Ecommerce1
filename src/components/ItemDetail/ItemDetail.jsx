@@ -5,6 +5,7 @@ import ItemCount from '../ItemCount/ItemCount'
 import { useContext, useState } from 'react';
 import { Link } from 'react-router-dom';
 import { CartContext } from '../../context/CartContext';
+import Swal from 'sweetalert2'
 
 const ItemDetail = (props) => {
 
@@ -17,7 +18,13 @@ const ItemDetail = (props) => {
     const handleOnAdd = (quantity) => {
 
         setQuantityAdded(quantity)
-        alert("Agregado al carrito")
+        Swal.fire({
+            position: 'center',
+            icon: 'success',
+            title: 'Product added to cart',
+            showConfirmButton: false,
+            timer: 1500
+          })
 
         const item = {id, title, price, image, stock}
 
@@ -41,7 +48,7 @@ const ItemDetail = (props) => {
                 </Card.Text>
                     {
                         quantityAdded > 0 ? (
-                            <Link to='/' className='Option'><Button variant="primary">Back to Gallery</Button></Link>
+                            <Link to='/' className='Option'><Button variant="dark">Back to Gallery</Button></Link>
                         ) : (
                             <ItemCount initial={1} stock={10} onAdd={handleOnAdd} />
                         )
