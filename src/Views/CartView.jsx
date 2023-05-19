@@ -29,9 +29,14 @@ const CartView = () => {
                     <CartItem key={prod.id} {...prod}/>
                 ))}
                 <h3 className="CartViewH3">Total a pagar: ${total}</h3>
-                <Button className="btn btn-success" onClick={clearCart}>
-                    <Link to='http://localhost:3000/' className='Option'> <h5> Finalizar Compra </h5></Link>
-                </Button>
+                <div className="BorrarCarritoBtn">
+                    <Button className="btn btn-success" onClick={clearCart}>
+                        <Link to='http://localhost:3000/' className='Option'> <h5> Finalizar Compra </h5></Link>
+                    </Button>
+                    <Button className="btn btn-danger " onClick={clearCart}>
+                        <h5 > Borrar carrito </h5>
+                    </Button>
+                </div>
             </div>
         </Fragment>
     )

@@ -19,10 +19,10 @@ const Footer = () => {
                         <div className="col-xs-6 col-md-3">
                             <h6>Categories</h6>
                             <ul className="footer-links">
-                                <Link><li><span href="/">Home</span></li></Link>
-                                <Link><li><span href="http://localhost:3000/category/BlackWhite">B&W</span></li></Link>
-                                <Link><li><span href="http://localhost:3000/category/Color">Colors</span></li></Link>
-                                <Link><li><span href="http://localhost:3000/category/Oil%20Paint">Oil Paint</span></li></Link>
+                                <Link to ="http://localhost:3000"><li><span >Home</span></li></Link>
+                                <Link to ="http://localhost:3000/category/BlackWhite"><li><span >B&W</span></li></Link>
+                                <Link to ="http://localhost:3000/category/Color"><li><span >Colors</span></li></Link>
+                                <Link to ="http://localhost:3000/category/Oil%20Paint"><li><span >Oil Paint</span></li></Link>
                             </ul>
                         </div>
                     </div>

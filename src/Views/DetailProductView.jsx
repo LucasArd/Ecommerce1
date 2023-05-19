@@ -4,7 +4,7 @@ import { useParams } from 'react-router-dom';
 import './CssViews/CssViews.css';
 import useFirestore from '../utils/useFireStore';
 
-// const URL = "https://fakestoreapi.com/products/"
+
 
 const nameCollection = 'items';
 
